@@ -1,0 +1,9 @@
+{
+	// Static assets only. VitePress builds into dist/docs so that files are
+	// served under /docs/, matching the route below.
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "kabuk-docs",
+	"compatibility_date": "2026-10-01",
+	"assets": { "directory": "./dist" },
+	"routes": [{ "pattern": "kabuk.app/docs*", "zone_name": "kabuk.app" }]
+}
